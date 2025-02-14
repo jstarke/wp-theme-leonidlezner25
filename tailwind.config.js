@@ -6,8 +6,8 @@ module.exports = {
         color1: "#171717",
         color2: "#333333",
         color3: "#333333",
-        color4: "#faca13",
-        color5: "#faca13",
+        color4: "#000000",
+        color5: "#666666",
       },
       typography: ({ theme }) => ({
         leonidlezner: {

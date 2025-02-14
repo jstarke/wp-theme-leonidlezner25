@@ -41,13 +41,14 @@
   }
 
   #header-menu .menu-item a {
-    @apply text-color4 hover:text-white;
+    @apply text-color4 hover:text-color4 relative;
   }
 
   #header-menu .current-menu-item a {
-    @apply text-color5 hover:text-color5 relative;
+    @apply text-color5 hover:text-color5;
   }
 
+  #header-menu .menu-item a:hover::after,
   #header-menu .current-menu-item a::after {
     content: "";
     display: block;

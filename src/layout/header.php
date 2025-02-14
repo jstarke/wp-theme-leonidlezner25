@@ -1,9 +1,9 @@
 <header class="pb-8 md:pb-12 lg:pb-20">
-  <div class="bg-color1" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
+  <div class="bg-white" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
     <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
-    <a href="<?php echo esc_url(home_url("/")); ?>" class="w-32 xl:w-36 py-3">
-      <img src="<?php echo get_image_url("logo_transparent.png"); ?>" alt="<?php bloginfo("name"); ?>" />
+    <a href="<?php echo esc_url(home_url("/")); ?>" class="bg-red-100 py-3">
+      <?php bloginfo("name"); ?>
     </a>
 
     <div class="flex items-center justify-end lg:hidden">
@@ -26,7 +26,7 @@
 
       <div>
         <form action="<?php echo home_url("/"); ?>" method="get" class="flex mr-3">
-          <input class="focus:ring-white focus:bg-color5 focus:ring-2 text-color1 placeholder:text-color1 rounded-md border-none outline-none bg-color4" name="s" value="<?php the_search_query(); ?>" type="text" placeholder="<?php lang("Search"); ?>" aria-label="<?php lang("Search"); ?>" />
+          <input class="focus:ring-white focus:bg-color5 focus:ring-2 text-color1 placeholder:text-color1 rounded-md outline-none bg-white border border-color3" name="s" value="<?php the_search_query(); ?>" type="text" placeholder="<?php lang("Search"); ?>" aria-label="<?php lang("Search"); ?>" />
 
           <button type="submit" class="block -ml-8">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
