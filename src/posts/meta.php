@@ -7,12 +7,9 @@
     </div>
     <div class="mr-1">
       <?php printf(
-        get_lang('%s in'),
+        get_lang('%s'),
         get_the_date('d.m.Y'),
       ); ?>
-    </div>
-    <div class="mr-1">
-      <?php the_category(', '); ?>
     </div>
   </div>
 </div>

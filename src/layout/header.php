@@ -2,8 +2,8 @@
   <div class="bg-white" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
     <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
-    <a href="<?php echo esc_url(home_url("/")); ?>" class="bg-red-100 py-3">
-      <?php bloginfo("name"); ?>
+    <a href="<?php echo esc_url(home_url("/")); ?>" class="py-3">
+      <span class="text-2xl font-bold"><?php bloginfo("name"); ?></span>
     </a>
 
     <div class="flex items-center justify-end lg:hidden">
