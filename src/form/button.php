@@ -1,1 +1,1 @@
-<button class="rounded-md px-5 py-1 text-color1 bg-color4 hover:bg-color5 cursor-pointer hover:outline hover:outline-1 hover:outline-color4" type="submit"><?php echo $args['caption'] ?></button>
+<button class="rounded-md px-5 py-1 text-color1 bg-gray-300 hover:bg-color2 hover:text-white  cursor-pointer hover:outline hover:outline-1 hover:outline-color4" type="submit"><?php echo $args['caption'] ?></button>
