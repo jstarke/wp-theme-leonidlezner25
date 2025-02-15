@@ -7,16 +7,20 @@
     </a>
   <?php endif; ?>
 
-  <div class="space-y-2 lg:space-y-5">
-    <?php get_template_part('src/partials/page_headline'); ?>
 
-    <?php if (is_single()) : ?>
-      <?php get_template_part('src/posts/meta'); ?>
-    <?php endif; ?>
-  </div>
 
-  <div class="grid grid-cols-7 gap-7">
-    <article class="col-span-7 lg:col-span-5">
+  <div class="max-w-3xl mx-auto">
+
+    <div class="space-y-2 lg:space-y-5 mb-10">
+      <?php get_template_part('src/partials/page_headline'); ?>
+
+      <?php if (is_single()) : ?>
+        <?php get_template_part('src/posts/meta'); ?>
+      <?php endif; ?>
+    </div>
+
+
+    <article class="">
       <?php the_post(); ?>
 
       <div class="prose prose-lg prose-leonidlezner">
@@ -35,11 +39,12 @@
         </div>
       <?php endif; ?>
     </article>
-    <?php if (is_single()) : ?>
+
+    <?php /* if (is_single()) : ?>
       <div class="col-span-7 lg:col-span-2">
         <?php get_template_part('src/partials/post_books'); ?>
       </div>
-    <?php endif; ?>
+    <?php endif; */ ?>
   </div>
 
   <?php /*if (is_single()) : ?>
@@ -47,4 +52,5 @@
   <?php endif;*/ ?>
 
 </div>
+
 <?php get_template_part('src/layout/page', 'end'); ?>
