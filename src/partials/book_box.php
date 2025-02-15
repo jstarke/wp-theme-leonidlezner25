@@ -11,9 +11,9 @@ if ($url && count($url)) {
 
 ?>
 
-<a href="<?php echo $url ?>" target="_blank" rel="nofollow" class="group flex items-center flex-col justify-between overflow-hidden border border-color5 hover:border-color4 rounded-md">
+<a href="<?php echo $url ?>" target="_blank" rel="nofollow" class="group flex items-center flex-col justify-between overflow-hidden border border-gray-300 hover:border-color4 rounded-md">
   <div class="p-3">
     <?php echo get_the_post_thumbnail($book, 'post-thumbnail', ['class' => 'object-cover w-40']); ?>
   </div>
-  <h3 class="text-color3 bg-color5 w-full text-center p-1 group-hover:text-color2"><?php echo $book->post_title; ?></h3>
+  <h3 class="text-color3 bg-gray-300 w-full text-center p-1 group-hover:text-color2"><?php echo $book->post_title; ?></h3>
 </a>

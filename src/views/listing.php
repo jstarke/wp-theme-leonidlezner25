@@ -33,7 +33,7 @@
       <?php endif; ?>
     </div>
 
-    <div class="col-span-7 lg:col-span-2 lg:border-l border-color5 space-y-12">
+    <div class="col-span-7 lg:col-span-2 lg:border-l border-gray-300 space-y-12">
       <?php /* get_template_part('src/partials/categories-list'); */ ?>
       <?php get_template_part('src/partials/last-comments'); ?>
     </div>

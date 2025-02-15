@@ -1,4 +1,4 @@
-<header class="pb-8 md:pb-12 lg:pb-20">
+<header class="pt-3 pb-8 md:pb-12 lg:pb-20">
   <div class="bg-white" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
     <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
@@ -8,9 +8,9 @@
 
     <div class="flex items-center justify-end lg:hidden">
       <button class="space-y-[5px] group" @click="open = !open">
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-white block" x-bind:class="open ? 'bg-white' : ''"></span>
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-white block" x-bind:class="open ? 'bg-white' : ''"></span>
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-white block" x-bind:class="open ? 'bg-white' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
       </button>
     </div>
 
@@ -26,7 +26,7 @@
 
       <div>
         <form action="<?php echo home_url("/"); ?>" method="get" class="flex mr-3">
-          <input class="focus:ring-white focus:bg-color5 focus:ring-2 text-color1 placeholder:text-color1 rounded-md outline-none bg-white border border-color3" name="s" value="<?php the_search_query(); ?>" type="text" placeholder="<?php lang("Search"); ?>" aria-label="<?php lang("Search"); ?>" />
+          <input class="focus:ring-white focus:bg-gray-100 focus:ring-2 text-color1 placeholder:text-color1 rounded-md outline-none bg-white border border-color3" name="s" value="<?php the_search_query(); ?>" type="text" placeholder="<?php lang("Search"); ?>" aria-label="<?php lang("Search"); ?>" />
 
           <button type="submit" class="block -ml-8">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

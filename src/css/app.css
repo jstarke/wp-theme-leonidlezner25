@@ -26,12 +26,12 @@
   }
 
   #header-menu .menu-item a {
-    @apply text-color4 hover:text-white border-t border-color1 block;
+    @apply text-gray-400 hover:text-white border-t border-color1 block;
     padding: 0.5em 0;
   }
 
   #header-menu .current-menu-item a {
-    @apply text-color5 font-bold;
+    @apply text-white font-bold;
   }
 }
 
