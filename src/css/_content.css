@@ -20,3 +20,7 @@
   height: 100%;
 }
  */
+
+.wp-block-button a {
+  @apply text-gray-300 hover:text-white hover:bg-gray-600 no-underline;
+}
