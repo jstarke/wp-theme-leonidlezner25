@@ -7,10 +7,7 @@
     </a>
   <?php endif; ?>
 
-
-
   <div class="max-w-3xl mx-auto">
-
     <div class="space-y-2 lg:space-y-5 mb-10">
       <?php get_template_part('src/partials/page_headline'); ?>
 
@@ -18,7 +15,6 @@
         <?php get_template_part('src/posts/meta'); ?>
       <?php endif; ?>
     </div>
-
 
     <article class="">
       <?php the_post(); ?>

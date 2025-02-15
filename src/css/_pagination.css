@@ -7,12 +7,12 @@
 }
 
 .nav-links .page-numbers {
-  @apply bg-color5 text-color2 rounded-md;
+  @apply bg-gray-300 text-color2 rounded-md;
   display: block;
   padding: 0.2em 1em;
 }
 
 .nav-links a.page-numbers:hover,
 .nav-links span.page-numbers {
-  @apply bg-color2 text-color4;
+  @apply bg-color2 text-white;
 }
