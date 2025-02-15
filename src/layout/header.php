@@ -8,9 +8,9 @@
 
     <div class="flex items-center justify-end lg:hidden">
       <button class="space-y-[5px] group" @click="open = !open">
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
-        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-white' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-gray-300' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-gray-300' : ''"></span>
+        <span class="h-[5px] w-7 bg-color4 group-hover:bg-gray-300 block" x-bind:class="open ? 'bg-gray-300' : ''"></span>
       </button>
     </div>
 
